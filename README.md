@@ -1,14 +1,14 @@
 GDG Sacramento: Polymer
 =======================
 
-Install Bower:
-http://bower.io
+Install Bower:  
+http://bower.io  
 npm install -g bower
 
-Update Bower:
+Update Bower:  
 npm update -g bower
 
-Install Polymer:
+Install Polymer:  
 bower install --save Polymer/polymer
 
 
