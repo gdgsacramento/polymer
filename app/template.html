@@ -1,0 +1,37 @@
+<!DCOTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<!-- http://www.html5rocks.com/en/tutorials/webcomponents/template/ -->
+
+<!-- Template content is effectively inert until activated -->
+<template id="mytemplate">
+    <img src="../images/webcomponents.png" alt="web components">
+    <div id="title"></div>
+</template>
+
+<script>
+
+    var t = document.querySelector('#mytemplate');
+
+    t.content.querySelector('#title').innerHTML = 'Web Component';
+
+    /*
+     * To use a template, you need to activate it. Otherwise its content
+     * will never render. The simplest way to do this is by creating a
+     * deep copy of its .content using document.importNode().
+     *
+     * https://developer.mozilla.org/en-US/docs/Web/API/document.importNode
+     */
+    var clone = document.importNode(t.content, true);
+
+    document.body.appendChild(clone);
+
+</script>
+
+</body>
+</html>
