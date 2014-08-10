@@ -11,4 +11,8 @@ npm update -g bower
 Install Polymer:  
 bower install --save Polymer/polymer
 
+Install core-ajax:  
+bower install --save Polymer/core-ajax
+
+
 

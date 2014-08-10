@@ -1,0 +1,30 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="gdg-aggiefeed" noscript>
+
+    <template>
+
+        <link href="https://aggiefeed.ucdavis.edu/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/aggiefeed.css" rel="stylesheet">
+
+        <core-ajax url="https://aggiefeed.ucdavis.edu/api/v1/activity/public" auto response="{{activities}}" handleAs="json"></core-ajax>
+
+        <template repeat="{{activity in activities}}">
+
+            <div class="edus-activity">
+                <div class="edus-activity-icon">
+                    <i class="[[activity.object.objectType == 'event' ? 'icon-calendar' : 'icon-globe']] icon-gold"></i>
+                </div>
+                <div class="edus-activity-body">
+                    <div class="edus-activity-title">[[activity.title]]</div>
+                    <div class="edus-activity-actor">[[activity.actor.displayName]]</div>
+                    <div class="edus-activity-content">[[activity.object.content]]</div>
+                </div>
+            </div>
+
+        </template>
+
+    </template>
+
+</polymer-element>

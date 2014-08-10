@@ -1,0 +1,119 @@
+
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+[class*='edus'], [class*='edus']:before, [class*='edus']:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.aggiefeed {
+    max-width: 400px;
+    padding: 10px;
+}
+
+.edus {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    width: 100%;
+    background: #ffffff;
+    line-height: 16px;
+}
+
+.edus-tabs {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.edus-container {
+    width: 100%;
+}
+
+.edus-activity {
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+    border-bottom: none;
+}
+
+.edus-activity:hover {
+    background: #F5F5F5;
+}
+
+.edus-activity:last-child {
+    padding: 10px;
+    border: 1px solid #e8e8e8;
+}
+
+.edus-activity-icon {
+    display: inline-block;
+    vertical-align: top;
+    align-content: center;
+    width: 4%
+}
+
+.edus-activity-icon i {
+    text-align: start;
+}
+
+.icon-gold {
+    background-image: url("../images/glyphicons-halflings-gold.png");
+}
+
+.edus-activity-body {
+    display: inline-block;
+    width: 94%;
+    padding-left: 5px;
+}
+
+.edus-activity-title {
+    color: #002855;
+    font-weight: bold;
+}
+
+.edus-activity-actor {
+    font-size: small;
+    color: #777777;
+}
+
+.edus-activity-content {
+    margin: 5px 0px 5px 0px;
+    font-size: 15px;
+    line-height: 1.25em;
+    color: #141414;
+}
+
+.edus-activity-event {
+    margin: 5px 0px 5px 10px;
+    font-size: 15px;
+    line-height: 1.25em;
+    color: #141414;
+}
+
+.edus-activity-url {
+    text-decoration: none;
+    color: #08c;
+}
+
+.edus-activity-url:hover {
+    text-decoration: underline;
+}
+
+.edus-activity-event-label {
+    font-size: small;
+    color: #777777;
+}
+
+.edus-activity-event-data {
+    padding-left: 10px;
+    color: #002855;
+}
+
+.edus-load-more {
+    width: 400px;
+    text-align: center;
+}
+
+.edus-hide {
+    display: none;
+}
+
+.edus-spinner {
+    position: relative;
+    top: 16px;
+}
