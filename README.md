@@ -14,5 +14,9 @@ bower install --save Polymer/polymer
 Install core-ajax:  
 bower install --save Polymer/core-ajax
 
+Install google-map:  
+bower install --save Polymer/google-map
+
+
 
 
