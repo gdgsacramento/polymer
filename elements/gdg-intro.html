@@ -1,0 +1,20 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Two way data binding -->
+
+<polymer-element name="gdg-intro" attributes="name">
+
+    <template>
+
+        <p>What's your name? <input value="{{name}}" placeholder="Enter name..."></p>
+        <p>Hello, <b>{{name}}</b>!</p>
+
+    </template>
+    <script>
+        Polymer('gdg-intro', {
+            ready: function() {
+                this.name = 'Stranger'
+            }
+        });
+    </script>
+</polymer-element>
