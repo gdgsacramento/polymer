@@ -17,6 +17,10 @@ bower install --save Polymer/core-ajax
 Install google-map:  
 bower install --save Polymer/google-map
 
+Install core-elements:  
+bower install --save Polymer/core-elements
 
+Install paper-elements:  
+bower install --save Polymer/paper-elements
 
 
