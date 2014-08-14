@@ -16,9 +16,21 @@
                 #padding-top: 40px;
             }
 
+            /* http://www.polymer-project.org/articles/styling-elements.html#style-distributed */
+            content[select="h3"]::content * {
+                color: red;
+            }
+
+            ::content * {
+                color: blue;
+            }
+
         </style>
 
         <div class="gdg-txt">Hello!</div>
+
+        <content select="h3"></content>
+
         <content></content>
 
     </template>
