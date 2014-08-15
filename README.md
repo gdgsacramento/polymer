@@ -8,8 +8,8 @@ npm install -g bower
 Update Bower:
 npm update -g bower
 
-Install all (using project bower.json file):
-cd gdg-sacramento-polymer
+Install all (using project bower.json file):  
+cd gdg-sacramento-polymer  
 bower install
 
 Install Polymer:
